@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="images/X.svg" alt="closed-icon" class="closed-icon">
+        <div class="block-links">
+            <a class="login-link" href="#">Login</a> | <a class="register-link" href="#">Register</a>
+        </div>
+        <p class="title">Enter your email and password to register.</p>
+        <form action="sabmit" method="post" class="form">
+            <p>
+                <input type="text" placeholder="Username" required>
+            </p>
+            <p>
+                <input type="text" placeholder="Enter your email address">
+            </p>
+            <div class="input-container">
+                <input type="password" id="password" placeholder="Password">
+                <img src="images/Hide.svg" alt="Toggle Password Visibility" class="toggle-password">
+            </div>
+
+            <p>
+                    <input type="password" placeholder="Confirm Password" required>
+            </p>
+            
+            <button type="submit" class="but">Register</button>
+            
+            <div class="block-reg">
+                <div class="lines"></div>
+                <span class="reg">Or register with</span>
+                <div class="lines"></div>
+            </div>
+            <p>
+                <a href="#" class="button-link"><img src="images/google1.svg" alt="Google"> Continue with Google</a>
+            </p>
+            <p>
+                <a href="#" class="button-link"><img src="images/facebook1.svg" alt="Facebook"> Continue with Facebook</a>
+            </p>
+        </form>
+    </div>
+    
+</body>
+</html>
