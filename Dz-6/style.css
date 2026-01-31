@@ -11,6 +11,12 @@ body{
     line-height: 1.6;
 }
 
+.wrapper{
+    font-size: 0;
+    vertical-align: middle;
+    padding-bottom: 10px;
+}
+
 .header{
     width: 1200px;
     margin-top: 30px;
