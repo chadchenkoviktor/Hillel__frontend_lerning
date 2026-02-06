@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.catalog{
+    margin-top: 30px;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.left-block{
+    width: 310px;
+    float: left;
+}
+
+.categories{
+    list-style: none;
+    margin-bottom: 377px;
+    margin-top: 37px;
+}
+
+.categories li a{
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.categories li a.active{
+    color: #46A358;
+}
+
+.sort{
+    float:right;
+    color: #3D3D3D;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.select:focus {
+    outline: none;
+}
+
+.right-block{
+    float: right;
+    width: 840px;
+}
+
+.right-block_header{
+    margin-bottom: 30px;
+}
+
+.rubric{
+    float:left;
+}
+
+.rubric li{
+    float:left;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.rubric li a{
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.rubric li a.active{
+    color: #46A358;
+    border-bottom: #46A358 2px solid;
+}
+
+.product-card{
+    width: 250px;
+    height: 350px;
+    background-color: #fbfbfb;
+    float: left;
+    margin-bottom: 70px;
+    margin-left: 30px;
+}
+
+.product-card img{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.product-card h3{
+    color: #3D3D3D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 6px;
+}
+
+.product-card p{
+    color: #46A358;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.pages-nav{
+    float:right
+}
+
+.pages-nav a{
+    float: left;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #f5f6f5;
+    color: #676768;
+    font-size: 14px;
+    margin-left: 10px;
+    border: #E5E5E5;
+    width: 35px;
+    height: 35px;
+    padding: 11px;
+}
+
+.pages-nav a.active{
+    background: #46A358;;
+    color: #ffffff;
+}
