@@ -28,6 +28,14 @@ body{
     float: left;
 }
 
+h2{
+    color: #3D3D3D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
 .categories{
     list-style: none;
     margin-bottom: 377px;
