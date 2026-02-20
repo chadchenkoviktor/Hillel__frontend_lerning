@@ -50,7 +50,7 @@ body{
 }
 
 .wrapper{
-    max-width: 1200px;
+    max-width: 1220px;
     min-width: 991px;
     margin: 0 auto;
 }
@@ -240,12 +240,14 @@ body{
 .catalog{
     display: flex;
     justify-content: space-between;
-    padding-top: 46px;
+    padding: 0 -10px;
+    margin-top: 46px;
 }
 
 .left-block{
     max-width: 285px;
     margin-right: 20px;
+    padding: 0 10px;
 }
 
 .categories-title{
@@ -283,6 +285,7 @@ body{
     display: flex;
     flex-direction: column;
     max-width: 895px;
+    padding: 0 10px;
 }
 
 .right-block_header{
@@ -314,21 +317,32 @@ body{
 
 .select{
     margin-right: 5px;
+    color: #3D3D3D;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
 }
 
 .products{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    padding: 0 -10px;
     margin-top: 60px;
+    background-color: #FBFBFB;
 }
 
 .product-item{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 10px;
+    width: 33.333%;
     position: relative;
+    background-color: #FBFBFB;
+    border-top: 2px solid transparent;
+    margin-bottom: 70px;
 }
 
 .product-card{
@@ -339,7 +353,7 @@ body{
     background-color: #46A358;
     color: #FFF;
     position: absolute;
-    top: 0;
+    top: 14px;
     left: 0;
     z-index: 10;
     padding: 5px 10px;
@@ -423,10 +437,10 @@ body{
 .pages-nav a{
     text-decoration: none;
     border-radius: 4px;
-    background: #d6d7d6;
+    background-color: #fff;
     color: #676768;
     font-size: 14px;
-    border: #E5E5E5;
+    border: 1px solid #E5E5E5;
     width: 35px;
     height: 35px;
     padding: 10px;
@@ -526,4 +540,365 @@ body{
     line-height: 24px;
     margin-right: 20px;
     margin-bottom: 23px;
+}
+
+.blog{
+    padding-top: 132px;
+}
+
+.blog-title{
+    color: #3D3D3D;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 15px;
+}
+
+.blog-subtitle{
+    color: #727272;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+
+.posts{
+    display: flex;
+    padding: 0 -10px;
+}
+
+.post{
+    width: 25%;
+    padding: 0 10px;
+    background-color: #FBFBFB;
+}
+
+.post-label{
+    color: #46A358;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 15px;
+}
+
+.post-title{
+    max-width: 200px;
+    color: #3D3D3D;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 5px;
+}
+
+.post-subtitle{
+    color: #727272;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    min-width: 255px;
+}
+
+.post-btn{
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    gap: 3px;
+}
+
+.form{
+    display: flex;
+    padding: 0 -10px;
+    margin-top: 100px;
+    background-color: #FBFBFB;
+}
+
+.form_left-block{
+    display: flex;
+    width: 60%;
+    padding: 0 10px;
+    gap: 50px;
+}
+
+.form-card{
+   padding: 0 10px; 
+}
+
+.input-form{
+    display: flex;
+    margin-top: 18px;
+    margin-bottom: 17px;
+}
+
+.form-card-title{
+    color: #3D3D3D;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    margin-top: 15px; 
+}
+
+.form-card-description{
+    color: #727272;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.form_right-block{
+    width: 30%;
+    padding: 0 10px;
+    margin-left: auto;
+}
+
+.form-title{
+    color: #3D3D3D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 18px;
+}
+
+.input-text{
+    display: block;
+    max-width: 354px;
+    height: 40px;
+    padding: 10px;
+    padding-right: 60px;
+}
+
+.btn-sub{
+    padding: 12px 17px 12px 34px;
+    border-radius: 0 6px 6px 0;
+    background-color: #46A358;
+    border: none;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.form-description{
+    color: #727272;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.footer{
+    min-width: 100%;
+}
+
+.footer-head{
+    padding: 26px 0 26px 0;
+    margin-top: 27px;
+    background: rgba(70, 163, 88, 0.10);
+}
+
+.footer_head-wrapper{
+    max-width: 1220px;
+    min-width: 991px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.footer_head-wrapper .logo{
+    margin-right: 110px;
+}
+
+.contacts{
+    display: flex;
+    gap: 60px;
+}
+
+.map{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.tel{
+     display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.footer_main-wrapper{
+    max-width: 1220px;
+    min-width: 991px;
+    margin: 0 auto;
+    background-color: #FBFBFB;
+}
+
+.footer-content{
+    padding-top: 32px;
+    display: flex;
+    justify-content: start;
+    gap: 100px;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.20);
+}
+
+.account{
+    list-style: none;
+    padding-left: 0;
+}
+
+.account li a{
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.help{
+    list-style: none;
+}
+
+.help li a{
+   text-decoration: none;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+}
+
+.footer-categories{
+    list-style: none;
+}
+
+.footer-categories li a{
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.facebook{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/Facebook.svg')no-repeat center;
+    border-radius: 4px;
+    border: 1px solid rgba(70, 163, 88, 0.20);
+}
+
+.instagram{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/instagram.svg')no-repeat center;
+    border-radius: 4px;
+    border: 1px solid rgba(70, 163, 88, 0.20);
+    margin-left: 10px;
+}
+
+.twitter{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/twitter.svg')no-repeat center;
+    border-radius: 4px;
+    border: 1px solid rgba(70, 163, 88, 0.20);
+    margin-left: 10px;
+}
+
+.linkedin{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/linkedin.svg')no-repeat center;
+    border-radius: 4px;
+    border: 1px solid rgba(70, 163, 88, 0.20);
+    margin-left: 10px;
+}
+
+.union{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/union.svg')no-repeat center;
+    border-radius: 4px;
+    border: 1px solid rgba(70, 163, 88, 0.20);
+    margin-left: 10px;
+}
+
+.socialMedia{
+    padding-left: 150px;
+}
+
+.social-title{
+    color: #3D3D3D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+
+.banking-title{
+    color: #3D3D3D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    margin-top: 33px;
+    margin-bottom: 13px;
+}
+
+.footer-footer{
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 13px;
+    margin-top: 7px;
 }
