@@ -20,7 +20,16 @@
                         <li><a href="#">Drainage</a></li>
                         <li><a href="#">Fungicides</a></li>
                         <li><a href="#">Fertilizer</a></li>
-                        <li><a href="#">Priming</a></li>
+                        <li><a href="#">Priming</a>
+                            <ul class="nav-inner-inner">
+                                <li><a href="#">Universal</a></li>
+                                <li><a href="#">For Ficus</a></li>
+                                <li><a href="#">For Cacti</a></li>
+                                <li><a href="#">For Citrus</a></li>
+                                <li><a href="#">For those in bloom</a></li>
+                                <li><a href="#">For Orchids</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li><a href="#">Blogs</a></li>
@@ -65,16 +74,50 @@
                 <div class="left-block">
                     <h2 class="categories-title">Categories</h2>
                     <ul class="categories">
-                        <li><a class="active" href="#">House Plants</a></li>
-                        <li><a href="#">Potter Plants</a></li>
-                        <li><a href="#">Seeds</a></li>
-                        <li><a href="#">Small Plants</a></li>
-                        <li><a href="#">Big Plants</a></li>
-                        <li><a href="#">Succulents</a></li>
-                        <li><a href="#">Trerrariums</a></li>
-                        <li><a href="#">Gardening</a></li>
-                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">House Plants <span>(33)</span></a></li>
+                        <li><a href="#">Potter Plants <span>(12)</span></a></li>
+                        <li><a href="#">Seeds <span>(65)</span></a></li>
+                        <li><a href="#">Small Plants <span>(39)</span></a></li>
+                        <li><a href="#">Big Plants <span>(23)</span></a></li>
+                        <li><a href="#">Succulents <span>(17)</span></a></li>
+                        <li><a href="#">Trerrariums <span>(19)</span></a></li>
+                        <li><a href="#">Gardening <span>(13)</span></a></li>
+                        <li><a href="#">Accessories <span>(18)</span></a></li>
                     </ul>
+                    <div class="price-range">
+                        <h2 class="price_range-title">Price Range</h2>
+                        <div id="slider-range"></div>
+                        <p class="label_for-amount">
+                            <label for="amount">Price:</label>
+                            <input type="text" id="amount" readonly="" style="border:0; color:#46A358; font-weight:bold;">
+                        </p>
+                        <button  type="button" class="price_range-button">
+                            Filter
+                        </button>
+                    </div>
+                    <div class="box-checkbox">
+                        <h3 class="box-checkbox-title">Size</h3>
+                        <p>
+                            <label for="small" class="checkbox-label">
+                                <input type="checkbox" id="small" name="small" class="checkbox-input visually-hidden">
+                                <span class="checkbox-text">Small<span>(119)</span>
+                                </span>
+                                
+                            </label>
+                        </p>
+                        <p>
+                            <label for="medium" class="checkbox-label">
+                                <input type="checkbox" id="medium" name="medium" class="checkbox-input visually-hidden">
+                                <span class="checkbox-text">Medium<span>(86)</span></span>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="large" class="checkbox-label">
+                                <input type="checkbox" id="large" name="large" class="checkbox-input visually-hidden">
+                                <span class="checkbox-text">Large<span>(78)</span></span>
+                            </label>
+                        </p>
+                    </div>
                     <img src="img/banner.jpg" alt="banner"class="banner img-responsive">
                 </div>
                 <div class="right-block">
@@ -85,12 +128,22 @@
                             <li><a href="#">Sale</a></li>
                         </ul>
                         <div class="sort">
-                            <span class="select">
-                                Sort by: Default sorting
-                            </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
-                                <path d="M10.6959 0.75L5.72295 5.41667L0.75 0.75" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <label for="salutation">Short by:
+                                <select name="salutation" id="salutation" class="select">
+                                    <option disabled="" selected="">
+                                        Default sorting
+                                    </option>
+                                    <option>Seeds</option>
+                                    <option>Plants</option>
+                                    <option>Cashpo</option>
+                                    <option>Other</option>
+                                </select>
+                                <div class="erow-select">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                                        <path d="M10.6959 0.75L5.72295 5.41667L0.75 0.75" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </label>
                         </div>
                     </div>
                     <div class="products">
@@ -634,6 +687,8 @@
         </div>
         <p class="footer-footer">&copy 2021 GreenShop. All Rights Reserved.</p>
     </footer>
-    
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
