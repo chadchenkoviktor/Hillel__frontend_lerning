@@ -541,7 +541,7 @@ body{
     transition-duration: 300ms;
 }
 
-.sort label:hover .erow-select{
+.sort label:focus-within .erow-select{
     transform: rotate(180deg);
 }
 
@@ -974,6 +974,7 @@ body{
 .map{
     display: flex;
     align-items: center;
+    width: 200px;
     gap: 9px;
     color: #3D3D3D;
     font-size: 14px;
@@ -981,6 +982,10 @@ body{
     font-weight: 400;
     line-height: 22px;
     text-decoration: none;
+}
+
+.map svg{
+    flex-shrink: 0;
 }
 
 .mail{
