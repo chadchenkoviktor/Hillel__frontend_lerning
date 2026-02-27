@@ -306,8 +306,10 @@ body{
 
 .left-block{
     width: 25%;
-    margin-right: 20px;
     padding: 0 10px;
+}
+
+.left-block_filters{
     background: #FBFBFB;
 }
 
@@ -317,14 +319,15 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: 16px;
-    margin-left: 16px;
     padding-top: 14px;
+    padding-left: 16px;
 }
 
 .categories{
     list-style: none;
     margin-top: 7px;
     padding-left: 27px;
+    padding-right: 22px;
 }
 
 .categories li a{
@@ -347,13 +350,15 @@ body{
 
 .price-range{
     position: relative;
+    left: 20px;
     margin-top: 36px;
-    width: 90%;
-
+    width: 80%;
+    padding: 0 10px;
 }
 
 .price_range-title{
     margin-bottom: 20px;
+    margin-left: -4px;
     color: #3D3D3D;
     font-size: 18px;
     font-style: normal;
@@ -363,8 +368,6 @@ body{
 
 #slider-range{
     margin-bottom: 15px;
-    width: 90%;
-    margin-left: 0;
 }
 
 .ui-slider{
@@ -394,7 +397,7 @@ body{
 }
 
 .label_for-amount{
-    margin-left: 6px;
+    display: flex;
 }
 
 .label_for-amount label{
@@ -407,7 +410,6 @@ body{
 
 .price_range-button{
     margin-top: 16px;
-    margin-left: 6px;
     border-radius: 6px;
     border: none;
     background-color: #46A358;
@@ -429,6 +431,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0 20px;
     margin-top: 46px;
 }
 
@@ -453,6 +456,7 @@ body{
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .checkbox-text::before{
@@ -547,7 +551,6 @@ body{
 
 .products{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 -10px;
 }
@@ -555,13 +558,13 @@ body{
 .product-item{
     padding: 0 10px;
     width: 33.333%;
-    border-top: 2px solid transparent;
     margin-bottom: 70px;
     transition-duration: 300ms;
 }
 
 .product-card{
     position: relative;
+    border-top: 2px solid transparent;
 }
 
 .label-card{
@@ -579,6 +582,10 @@ body{
 }
 
 .product-card_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
     margin-bottom: 12px;
     background: #FBFBFB;
 }
@@ -622,7 +629,7 @@ body{
    opacity: 1;
 }
 
-.product-item:hover{
+.product-card:hover{
     border-top: 2px solid #46A358;
 }
 
@@ -680,12 +687,14 @@ body{
 .summer-cactus{
     display: flex;
     padding-top: 100px;
-    gap: 20px;
+    margin: 0 -10px;
 }
 
 .left-box{
+    width: 50%;
     display: flex;
     align-items: center;
+    padding: 0 10px;
     background-color:#FBFBFB;
 }
 
@@ -737,8 +746,10 @@ body{
 }
 
 .right-box{
+    width: 50%;
     display: flex;
     align-items: center;
+    padding: 0 10px;
     background-color:#FBFBFB;
 }
 
@@ -856,20 +867,24 @@ body{
 
 .form{
     display: flex;
-    padding: 0 -10px;
-    margin-top: 100px;
+    margin: 100px -10px 0 -10px;
     background-color: #FBFBFB;
+    padding-top: 27px;
+    padding-bottom: 27px;
 }
 
 .form_left-block{
     display: flex;
-    width: 60%;
+    width: 70%;
     padding: 0 10px;
-    gap: 50px;
+    margin: 0 -10px;
+
 }
 
 .form-card{
-   padding: 0 10px; 
+    width: 33.333%;
+   padding: 0 10px;
+   margin-right: 40px; 
 }
 
 .input-form{
@@ -908,6 +923,7 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: 16px;
+    margin-top: 10px;
     margin-bottom: 18px;
 }
 
@@ -951,7 +967,6 @@ body{
 
 .footer-head{
     padding: 26px 0 26px 0;
-    margin-top: 27px;
     background: rgba(70, 163, 88, 0.10);
 }
 
@@ -1021,6 +1036,7 @@ body{
 
 .footer-content{
     padding-top: 32px;
+    padding-bottom: 27px;
     display: flex;
     justify-content: start;
     gap: 100px;
