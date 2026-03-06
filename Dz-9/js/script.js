@@ -11,3 +11,12 @@ $( function() {
     $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
   } );
+
+  const burger = document.querySelector('.img-burger');
+  const menu = document.querySelector('.nav-for-burger');
+    
+     burger.addEventListener('click', () => {
+    burger.style.display = 'none';
+    menu.style.display = "block";
+  });
+  

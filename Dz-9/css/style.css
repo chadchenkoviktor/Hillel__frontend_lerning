@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Cera Pro';
-    src: url('../font/CeraPro-Black.woff2') format('woff2');
+    src: url('../fonts/CeraPro-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Cera Pro';
-    src: url('../font/CeraPro-Bold.woff2') format('woff2');
+    src: url('../fonts/CeraPro-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Cera Pro';
-    src: url('../font/CeraPro-Medium.woff2') format('woff2');
+    src: url('../fonts/CeraPro-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Cera Pro';
-    src: url('../font/CeraPro-Regular.woff2') format('woff2');
+    src: url('../fonts/CeraPro-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
     font-family: 'Cera Pro';
-    src: url('../font/CeraPro-Thin.woff2') format('woff2');
+    src: url('../fonts/CeraPro-Thin.woff2') format('woff2');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -62,7 +62,7 @@ body{
 
 .wrapper{
     max-width: 1220px;
-    min-width: 991px;
+    min-width: 320px;
     margin: 0 auto;
     padding: 0 10px
 }
@@ -73,6 +73,7 @@ body{
 }
 
 .header{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,6 +84,30 @@ body{
 .nav{
     display: flex;
     list-style: none;
+}
+
+.nav-for-burger{
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 30px;
+    left: 180px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(87, 83, 83, 0.5);
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+}
+
+.nav-for-burger li a{
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .nav li{
@@ -99,11 +124,11 @@ body{
     line-height: normal;
 }
 
-.nav > li > a:hover{
+.nav > li a:hover{
     color: #3D3D3D;
-    font-weight: 700;
+    font-weight: 500;
     border-bottom: #46A358 3px solid;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
     transition-duration: 300ms;
     transition-property: border-bottom;
 }
@@ -173,6 +198,10 @@ body{
     display: block;
 }
 
+.img-burger img{
+     display: none;
+}
+
 .box-login{
     display: flex;
     align-items: center;
@@ -183,9 +212,17 @@ body{
     cursor: pointer;
 }
 
+.search svg:hover path {
+    fill: #12812a;
+}
+
 .cart{
     position: relative;
     cursor: pointer;
+}
+
+.cart svg:hover path{
+    fill: #12812a;
 }
 
 .cart .label{
@@ -483,8 +520,6 @@ body{
 }
 
 .right-block{
-    display: flex;
-    flex-direction: column;
     width: 75%;
     padding: 0 10px;
 }
@@ -590,10 +625,6 @@ body{
     background: #FBFBFB;
 }
 
-.product-card_img_4{
-    margin-bottom: -12px;
-}
-
 .product-card_icons{
     opacity: 0;
     display: flex;
@@ -660,17 +691,18 @@ body{
 }
 
 .pages-nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     border-radius: 4px;
     background-color: #fff;
     color: #676768;
-    font-size: 14px;
+    font-size: 18px;
     border: 1px solid #E5E5E5;
     width: 35px;
     height: 35px;
-    padding: 10px;
-    text-align: center;
-    vertical-align: middle;
+    color: #3D3D3D;
     transition-duration: 300ms;
 }
 
@@ -690,21 +722,25 @@ body{
     margin: 0 -10px;
 }
 
-.left-box{
+.cactus-box{
     width: 50%;
-    display: flex;
-    align-items: center;
     padding: 0 10px;
-    background-color:#FBFBFB;
 }
 
-.left-box_content{
+.box_wr{
+    display: flex;
+    align-items: center;
+    background-color:#FBFBFB;
+    padding-right: 20px;
+}
+
+.box_content{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.left-box_content h3{
+.box_content h3{
     width: 150px;
     color: #3D3D3D;
     text-align: right;
@@ -716,7 +752,7 @@ body{
     margin-bottom: 23px;
 }
 
-.left-box_content p{
+.box_content p{
     color: #727272;
     text-align: right;
     font-size: 14px;
@@ -745,21 +781,25 @@ body{
     background: #237233;
 }
 
-.right-box{
+.cactus-box{
     width: 50%;
-    display: flex;
-    align-items: center;
     padding: 0 10px;
-    background-color:#FBFBFB;
 }
 
-.right-box_content{
+.box_wr{
+    display: flex;
+    align-items: center;
+    background-color:#FBFBFB;
+    padding-right: 20px;
+}
+
+.box_content{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.right-box_content h3{
+.box_content h3{
     width: 150px;
     color: #3D3D3D;
     text-align: right;
@@ -771,7 +811,7 @@ body{
     margin-bottom: 23px;
 }
 
-.right-box_content p{
+.box_content p{
     color: #727272;
     text-align: right;
     font-size: 14px;
@@ -820,13 +860,16 @@ body{
     background-color: #FBFBFB;
 }
 
+.post-content_wr{
+    padding: 15px;
+}
+
 .post-label{
     color: #46A358;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
-    margin-top: 15px;
 }
 
 .post-title{
@@ -961,18 +1004,12 @@ body{
     line-height: 22px;
 }
 
-.footer{
-    width: 100%;
-}
-
 .footer-head{
     padding: 26px 0 26px 0;
     background: rgba(70, 163, 88, 0.10);
 }
 
 .footer-wrap{
-    max-width: 1220px;
-    min-width: 991px;
     display: flex;
     margin: 0 auto;
 }
@@ -989,7 +1026,7 @@ body{
 .map{
     display: flex;
     align-items: center;
-    width: 200px;
+    max-width: 200px;
     gap: 9px;
     color: #3D3D3D;
     font-size: 14px;
@@ -1016,7 +1053,7 @@ body{
 }
 
 .tel{
-     display: flex;
+    display: flex;
     align-items: center;
     gap: 9px;
     color: #3D3D3D;
@@ -1028,8 +1065,8 @@ body{
 }
 
 .footer_main-wrapper{
-    max-width: 1220px;
-    min-width: 991px;
+    /* max-width: 1220px;
+    min-width: 320px; */
     margin: 0 auto;
     background-color: #FBFBFB;
 }
@@ -1212,4 +1249,121 @@ body{
     text-align: center;
     margin-bottom: 13px;
     margin-top: 7px;
+}
+
+@media screen and (max-width: 991px){
+    
+    .nav li{
+        margin-right: 30px;
+    }
+    .hero-section{
+        padding-top: 20px;
+    }
+    .hero-label{
+        margin-top: 20px;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .product-item{
+        width: 50%;
+    }
+    .summer-cactus{
+        display: block;
+        margin: 0 auto;
+    }
+    .cactus-box{
+        display: flex;
+        width: 100%;
+        padding-right: 20px;
+        margin-bottom: 30px;
+    }
+    .box_wr{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .box_content p{
+        max-width: 330px;
+    }
+    .cactus-box{
+        display: flex;
+        width: 100%;
+        padding-right: 20px;
+    }
+    .box_content p{
+        max-width: 330px;
+    }
+    .posts{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+}
+    .post{
+        width: 50%;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .wrapper{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .nav{
+        display: none;
+    }
+    .img-burger img{
+     display: block;
+    }
+    
+    .box-img{
+        display: none;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .form_left-block{
+        display: flex;
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 -10px;
+    }
+
+    .form-card{
+        width: 33.333%;
+        padding: 0 10px;
+        margin-right: 0; 
+    }
+    .form_right-block{
+        width: 80%;
+        padding: 30px 20px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .posts{
+        display: block;
+    }
+    .post{
+        width: 100%;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .form_left-block{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .form-card{
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 20px; 
+    } 
+
 }
