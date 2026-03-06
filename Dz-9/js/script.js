@@ -14,9 +14,15 @@ $( function() {
 
   const burger = document.querySelector('.img-burger');
   const menu = document.querySelector('.nav-for-burger');
+  const cros = document.querySelector('.img-cros');
     
-     burger.addEventListener('click', () => {
+    burger.addEventListener('click', () => {
     burger.style.display = 'none';
     menu.style.display = "block";
+  });
+
+   cros.addEventListener('click', () => {
+    menu.style.display = "none";
+    burger.style.display = 'block';
   });
   
