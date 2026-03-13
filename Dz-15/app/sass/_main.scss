@@ -1,0 +1,169 @@
+.hiro {
+    background-color: #323264;
+    &__img-box {
+        display: flex;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        position: relative;
+        margin: 0 auto;
+    }        
+    img {
+            max-width: 100%;
+            height: auto;
+        }   
+    &__title {
+        position: absolute;
+        margin: 350px auto;
+        color: #FFF;
+        text-align: center;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 4px;    
+    }
+    &__icon-scroll {
+        position: absolute;
+        margin: 700px auto;
+        
+    }
+    &__box-content {
+        margin-top: 30px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        overflow: hidden;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.30);
+        list-style: none;
+        text-align: right;
+        a {
+            text-decoration: none;
+            color: #B3B3BA;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    &__box-subscribe {
+       
+        h3 {
+            color:#FFF;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        p {
+            color: #FFF;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            margin-top: 30px;
+        }
+    }
+    
+}
+
+.services {
+    margin-top: 30px;
+    padding: 15px;
+    padding-bottom: 60px;
+    border-radius: 0 0 12px 12px;
+    background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    &__label {
+        color: #24A3FF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    &__title {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: #F0145A;
+        background-color: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+        background-clip: text;
+        margin-top: 10px;
+    }
+    &__item {
+        img {
+            margin-top: 30px;
+        }
+        h3 {
+            margin-top: 30px;
+            color: #24A3FF;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        p {
+            margin-top: 15px;
+            color: var(--Basic-White, #FFF);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+        }
+    }
+    .team {
+        background-color: #F5F5FA;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .hiro__box-content {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .hiro__box-subscribe {
+        max-width: 581px;
+        margin-left: 60px;
+    }
+    .hiro__list {
+        flex-direction: column;
+        border-bottom: none;
+        border-right: 4px solid rgba(255, 255, 255, 0.30);
+        padding: 14px 60px 14px 0;
+        a {
+            color: #B3B3BA;
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+    .services__box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content max-content max-content;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .services__box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: min-content max-content ;
+        gap: 30px;
+    }
+}
+
