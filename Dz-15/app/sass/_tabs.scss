@@ -1,0 +1,98 @@
+.tabs {
+    &__box-content {
+        margin-top: 60px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.30);
+        list-style: none;
+        text-align: right;
+        overflow: auto;
+        padding-bottom: 30px;
+    }
+    &__btn {
+        color: #B3B3BA;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-right: 30px;
+        white-space: nowrap;
+        &.active {
+            background: linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%);
+            background-clip: text;
+            color: transparent;
+        }
+    }
+    &__box-subscribe {
+        display: none;
+        h3 {
+            color:#FFF;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 60px;
+        }
+        p {
+            color: #FFF;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            margin-top: 30px;
+        }
+        &.active {
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+    .tabs__box-content {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tabs {
+        margin-top: 90px;
+    }
+    .tabs__box-subscribe {
+        margin-left: 60px;
+    }
+    .tabs__list {
+        padding: 14px 60px 14px 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .tabs__box-content {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    } 
+    .tabs__list {
+        flex-direction: column;
+        border-right: 4px solid rgba(255, 255, 255, 0.30);
+        border-bottom: none;
+        flex-shrink: 0;
+    }
+    .tabs__btn {
+        color: #B3B3BA;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-right: 0px;
+    }
+    .tabs__box-subscribe h3 {
+        margin-top: 0;
+    }
+}
