@@ -1,5 +1,5 @@
 .posts {
-    background: #F5F5FA;
+    background: red;
     &__box {
     padding-top: 30px;
     }
@@ -63,7 +63,6 @@
     .posts__post { 
         .photo {
             width: 100%;
-            background: url(<path-to-image>) lightgray 50% / cover no-repeat;
         }
     }
 }
